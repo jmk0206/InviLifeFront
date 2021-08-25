@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* 브라우저 초기화 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #222;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+.hide {
+    position: absolute;
+    top: -9999999px;
+    left: -99999999px;
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+input {
+    outline: none;
+}
+
+/* 모바일 시작 */
+
+#headerIn {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+#login_logo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#login_logo a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    text-indent: -999999999999px;
+    background-image: url(../img/main_title.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#login_lang {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+#login_lang_in {
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    outline: none;
+}
+
+#container {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#containerIn {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#user_id {
+    margin-bottom: 10px;
+}
+
+#user_pw {
+    margin-bottom: 20px;
+}
+
+#user_login .user_select {
+    border: 1px solid #680000;
+}
+
+#fromLogin {
+    margin-bottom: 15px;
+}
+
+#login_button {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #7a5b4d;
+    background-color: #98651e;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.log_checkbox {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login_checkbox {
+    margin-right: 5px;
+}
+
+#search_login {
+    display: flex;
+    justify-content: center;
+}
+
+#search_login li a {
+    font-size: 14px;
+    color: #222;
+}
+
+#search_login li:before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #888;
+    margin: 0 10px;
+}
+
+#search_login li:first-child::before {
+    display: none;
+}
+
+
+
+
+/* 모바일 끝 */
+
+
+/* 태블릿 시작 */
+
+@media screen and (min-width: 768px) {
+    #headerIn {
+        max-width: 768px;
+        padding-top: 100px;
+    }
+
+    #login_logo a {
+        width: 400px;
+        height: 60px;
+    }
+
+    #container {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 500px;
+        height: 50px;
+    }
+
+    #login_button {
+        width: 500px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+
+   
+}
